@@ -27,7 +27,7 @@ def cpolar():
     url = 'https://dashboard.cpolar.com/status'
     html = requests.get(url,headers=header).text
     e = etree.HTML(html)
-    #xpath解析语法
+    #xpath解析语法，cpolar默认是三个隧道信息，本来我只想要ssh这个，但是后来测试发现三个隧道的html中位置有时候会随机变换，索性全部隧道信息都添加上。
     names = e.xpath('/html/body/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/th/a/text()')
     names.append(e.xpath('/html/body/div[5]/div/div[2]/div[2]/table/tbody/tr[2]/th/a/text()'))
     names.append(e.xpath('/html/body/div[5]/div/div[2]/div[2]/table/tbody/tr[3]/th/a/text()'))
