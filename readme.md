@@ -1,13 +1,13 @@
 # 树莓派开机自动发送局域网ip和cpolar的隧道信息到指定邮箱
 ---
 
-## 一直想找能够开机发送cpolar的隧道的代码，但是貌似发现有人有这个需求，本代码在已有代码基础上增加了这个功能。
-## [cpolar](https://www.cpolar.com/)是内网穿透工具，非常好用，推荐！！
+### 一直想找能够开机发送cpolar的隧道的代码，但是貌似发现有人有这个需求，本代码在已有代码基础上增加了这个功能。
+### [cpolar](https://www.cpolar.com/)是内网穿透工具，非常好用，推荐！！
 
 ---
 ## 运行步骤
 1. 复制本文件并进行相关信息修改。
-2. 修改/ect/rc.local信息，添加'python /home/pi/mail.py >> /home/pi/mail.log 2>&1'在exit0之前。
+2. 修改/ect/rc.local信息，添加python /home/pi/mail.py >> /home/pi/mail.log 2>&1在exit0之前，注意文件的绝对路径位置。
 ``` sh
 #!/bin/sh -e
 #
