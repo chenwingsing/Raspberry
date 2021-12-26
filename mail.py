@@ -80,7 +80,7 @@ def get_ip_address():
     return ipaddr
     
 if __name__=='__main__':
-    time.sleep(1)
+    time.sleep(15)
     check_network()
     ip=get_ip_address()
     alltunnel = cpolar()
