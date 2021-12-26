@@ -40,7 +40,7 @@ exit 0
 ## 如何获取cpolar的cookies
 1. 在登录cpolar之前先开启开发人员工具(360浏览器右键的审查元素)，点击网络，然后登进去你的账号并进入仪表盘。此时开发工具的网络部分会有内容，status中就藏有cookies。
 ![](/cookies1.png)
-2. 点击status，右边找到cookies即可，cookies:右边的就是我们的cookies。
+2. 点击status，右边找到cookies,如图从_ga=开始就是我们的cookies
 ![](/cookies2.png)
 ## 如何获取SMTP 
 1. QQ邮箱中点击设置-账户，然后开启smtp并且生成您的授权码。
