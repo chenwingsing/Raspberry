@@ -31,8 +31,10 @@ def cpolar():
     names = e.xpath('/html/body/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/th/a/text()')
     names.append(e.xpath('/html/body/div[5]/div/div[2]/div[2]/table/tbody/tr[2]/th/a/text()'))
     names.append(e.xpath('/html/body/div[5]/div/div[2]/div[2]/table/tbody/tr[3]/th/a/text()'))
-    if(len(names)==0):names = ['您的cookies过期了']
-    return names
+    if(len(names) != 3):
+        alltunnel = '您的cookies过期了'
+    else: alltunnel = str(names[0]) + "  "+ str(names[1][0]) + "  "+ str(names[2][0])  
+    return alltunnel
 
 
 def mail():
@@ -78,14 +80,10 @@ def get_ip_address():
     return ipaddr
     
 if __name__=='__main__':
-    time.sleep(15)
+    time.sleep(1)
     check_network()
     ip=get_ip_address()
-    tunnel = cpolar()
-    if (len(tunnel)!= 3):
-        alltunnel = tunnel[0]
-    else:
-        alltunnel = str(tunnel[0]) + "  "+ str(tunnel[1][0]) + "  "+ str(tunnel[2][0])  
+    alltunnel = cpolar()
     ret = mail()
     if ret:
         print("OK")
