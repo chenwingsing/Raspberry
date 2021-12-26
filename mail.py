@@ -16,9 +16,9 @@ from bs4 import BeautifulSoup
 my_sender = '**********@qq.com'  # 发件人QQ邮箱账号
 my_pass = '**********'  # 发件SMTP授权码
 my_user = '**********'  # 收件人QQ邮箱账号，自己发自己就行
+cookie = '''填写你登录cpoolar的cookies'''
 
 def cpolar():
-    cookie = '''填写你登录cpoolar的cookies'''
     header = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36',
     'Connection': 'keep-alive',
