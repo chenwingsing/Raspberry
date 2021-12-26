@@ -6,7 +6,7 @@
 ### [cpolar](https://www.cpolar.com/)是内网穿透工具，非常好用，推荐！！
 下面内容包括三个部分：
 1. [运行步骤](#运行步骤)
-2. [如何如何获取cpolar的cookies](#如何如何获取cpolar的cookies)
+2. [如何如何获取cpolar的cookies](#如何获取cpolar的cookies)
 3. [如何获取SMTP](#如何获取SMTP)
 
 
