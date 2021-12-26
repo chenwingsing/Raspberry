@@ -37,7 +37,7 @@ fi
 python /home/pi/mail.py >> /home/pi/mail.log 2>&1 #注意要修改为文件的绝对路径
 exit 0
 ```
----
+
 ## 如何获取cpolar的cookies
 1. 在登录cpolar之前先开启开发人员工具(360浏览器右键的审查元素)，点击网络，然后登进去你的账号并进入仪表盘。此时开发工具的网络部分会有内容，status中就藏有cookies。
 ![](/cookies1.png)
