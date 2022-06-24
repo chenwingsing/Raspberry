@@ -14,7 +14,7 @@
 
 ## 运行步骤
 1. 复制mail.py到您的派派上并进行相关信息修改。
-2. 修改/ect/rc.local信息，添加python /home/pi/mail.py >> /home/pi/mail.log 2>&1在exit0之前，注意文件的绝对路径位置。
+2. 修改/ect/rc.local信息，添加python3 /home/pi/mail.py >> /home/pi/mail.log 2>&1在exit0之前，注意文件的绝对路径位置。
 ``` sh
 #!/bin/sh -e
 #
@@ -34,7 +34,7 @@ _IP=$(hostname -I) || true
 if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
-python /home/pi/mail.py >> /home/pi/mail.log 2>&1 #注意要修改为文件的绝对路径
+python3 /home/pi/mail.py >> /home/pi/mail.log 2>&1 #注意要修改为文件的绝对路径
 exit 0
 ```
 
