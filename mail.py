@@ -57,7 +57,7 @@ def mail():
         ret = False
     return ret
  
-# 检查网络连同性
+# 检查网络连通性
 def check_network():
     while True:
         try:
@@ -71,7 +71,7 @@ def check_network():
            time.sleep(5)
     return True
  
-# 获得本级制定接口的ip地址
+# 获得本机制定接口的ip地址
 def get_ip_address():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.connect(("1.1.1.1",80))
