@@ -3,6 +3,7 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
+#企业微信机器人推送链接
 webhook_url = "xxxxxx"
 
 def send_to_wechat(msg):
